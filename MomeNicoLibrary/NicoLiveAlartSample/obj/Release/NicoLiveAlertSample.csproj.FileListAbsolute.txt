@@ -1,0 +1,7 @@
+V:\Data Files\Documents\Visual Studio 2008\Projects\MomeNicoLibrary\NicoLiveAlartSample\obj\Release\ResolveAssemblyReference.cache
+V:\Data Files\Documents\Visual Studio 2008\Projects\MomeNicoLibrary\NicoLiveAlartSample\obj\Release\NicoLiveAlartSample.exe
+V:\Data Files\Documents\Visual Studio 2008\Projects\MomeNicoLibrary\NicoLiveAlartSample\obj\Release\NicoLiveAlartSample.pdb
+V:\Data Files\Documents\Visual Studio 2008\Projects\MomeNicoLibrary\NicoLiveAlartSample\bin\Release\NicoLiveAlartSample.exe
+V:\Data Files\Documents\Visual Studio 2008\Projects\MomeNicoLibrary\NicoLiveAlartSample\bin\Release\NicoLiveAlartSample.pdb
+V:\Data Files\Documents\Visual Studio 2008\Projects\MomeNicoLibrary\NicoLiveAlartSample\bin\Release\MomeNicoLibrary.dll
+V:\Data Files\Documents\Visual Studio 2008\Projects\MomeNicoLibrary\NicoLiveAlartSample\bin\Release\MomeNicoLibrary.pdb

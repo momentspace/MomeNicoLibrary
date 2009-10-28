@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C# Express 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NicoLiveNgListViewer", "NicoLiveNgListViewer\NicoLiveNgListViewer.csproj", "{EF1D4923-9CF9-4D3C-8C71-4E66E0A2CD52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NicoLiveCommentViewerSample", "NicoLiveCommentViewerSample\NicoLiveCommentViewerSample.csproj", "{B3C257D2-8FCF-4B62-9EA9-60A1E1C5FD9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NicoLiveCommentSenderSample", "NicoLiveCommentSenderSample\NicoLiveCommentSenderSample.csproj", "{2F030CB9-78B1-4801-B5E3-002BDB0A568B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NicoLiveAlertSample", "NicoLiveAlartSample\NicoLiveAlertSample.csproj", "{64EC969E-66BB-45EE-8826-66AD7ED8F077}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MomeNicoLibrary", "MomeNicoLibrary\MomeNicoLibrary.csproj", "{B448CB2A-D41B-4113-86DE-37BE011E6918}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NicoLiveCommentViewerGUISample", "NicoLiveCommentViewerGUISample\NicoLiveCommentViewerGUISample.csproj", "{E08EDD31-0525-4001-8C32-BC5F6929DEE4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF1D4923-9CF9-4D3C-8C71-4E66E0A2CD52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF1D4923-9CF9-4D3C-8C71-4E66E0A2CD52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF1D4923-9CF9-4D3C-8C71-4E66E0A2CD52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF1D4923-9CF9-4D3C-8C71-4E66E0A2CD52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3C257D2-8FCF-4B62-9EA9-60A1E1C5FD9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3C257D2-8FCF-4B62-9EA9-60A1E1C5FD9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3C257D2-8FCF-4B62-9EA9-60A1E1C5FD9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3C257D2-8FCF-4B62-9EA9-60A1E1C5FD9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F030CB9-78B1-4801-B5E3-002BDB0A568B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F030CB9-78B1-4801-B5E3-002BDB0A568B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F030CB9-78B1-4801-B5E3-002BDB0A568B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F030CB9-78B1-4801-B5E3-002BDB0A568B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64EC969E-66BB-45EE-8826-66AD7ED8F077}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64EC969E-66BB-45EE-8826-66AD7ED8F077}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64EC969E-66BB-45EE-8826-66AD7ED8F077}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64EC969E-66BB-45EE-8826-66AD7ED8F077}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B448CB2A-D41B-4113-86DE-37BE011E6918}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B448CB2A-D41B-4113-86DE-37BE011E6918}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B448CB2A-D41B-4113-86DE-37BE011E6918}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B448CB2A-D41B-4113-86DE-37BE011E6918}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E08EDD31-0525-4001-8C32-BC5F6929DEE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E08EDD31-0525-4001-8C32-BC5F6929DEE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E08EDD31-0525-4001-8C32-BC5F6929DEE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E08EDD31-0525-4001-8C32-BC5F6929DEE4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

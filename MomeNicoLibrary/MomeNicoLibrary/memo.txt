@@ -1,0 +1,71 @@
+﻿MomeNicoLibrary
+	-NicoCommunity
+	　ニコニコミュニティ情報取得用
+	-NicoMovie
+	　ニコニコ動画情報取得、操作用
+	-NicoLive
+	　ニコ生情報取得、操作用
+		-Information
+		　アラーム情報
+		　放送情報
+		　NGワード情報
+	-Common
+	　共通ルーチン
+	　
+MomeNicoLibraryの今後の予定
+	　
+TODO
+→考えないといけないもの
+・各オブジェクトマップクラス
+・コメント受信をどう処理するか考える
+・不具合再現が出来るように、コメント・アラートの保存、再生の機能を付ける
+・その他API系の実装
+・NgListの構造設計のやり直し
+→考えなくてもいいもの
+・PlayerStatusの実装	
+・コメント投稿の実装
+
+放送のネタとして
+・MomeNicoLibraryの開発
+・Subversion/Trac（バージョン管理/バグトラッカー）の設置
+・gitのお勉強？	11/3 勉強会
+・python/RubyにMomeNicoLibraryを移植する
+・
+	　
+	　
+	　		target = <thread last_res="1066521" resultcode="0" revision="1" server_time="125
+6323322" thread="1000000003" ticket="0x9c8e630"/>
+
+		public ChatItems()
+		{
+			values = new string[]
+			{
+				LAST_RES,
+				RESULTCODE,
+				REVISION,
+				SERVERTIME,
+				THREAD,
+				TICKET,
+			};
+		}
+
+		public const string LAST_RES = "thread/@last_Res";
+		public const string RESULTCODE = "thread/@resultcode";
+		public const string REVISION = "thread/@revision";
+		public const string SERVERTIME = "thread/@server_time";
+		public const string THREAD = "thread/@thread";
+		public const string TICKET = "thread/@ticket";
+
+
+url
+http://www.nicovideo.jp/api/getflv?v=sm8619805
+packet
+thread_id=1256500998&l=268&url=http%3A%2F%2Fsmile-pso21.nicovideo.jp%2Fsmile%3Fm%3D8619805.50102&link=http%3A%2F%2Fwww.smilevideo.jp%2Fview%2F8619805%2F697078&ms=http%3A%2F%2Fmsg.nicovideo.jp%2F2%2Fapi%2F&user_id=697078&is_premium=1&nickname=%E3%82%82%E3%82%81%E3%82%93%E3%81%A8&time=1256660692&done=true&ng_rv=108
+thread_id=1256500998&l=268&url=http://smile-pso21.nicovideo.jp/smile?m=8619805.50102&link=http://www.smilevideo.jp/view/8619805/697078&ms=http://msg.nicovideo.jp/2/api/&user_id=697078&is_premium=1&nickname=繧ゅａ繧薙→&time=1256660692&done=true&ng_rv=108
+
+
+url
+http://live.nicovideo.jp/api/getflv?v=lv5875489
+packet
+video_id=lv5875489&thread_id=1007461258&l=999999999&url=rtmp%3A%2F%2Fnleca04.live.nicovideo.jp%3A1935liveedge&stream_name=liverepeater%3Artmp%3A%2F%2Forigin101%2Fliveorigin%2Flv5875489&ms=msg101.live.nicovideo.jp&ms_port=2814&user_id=697078&is_premium=1&nickname=%E3%82%82%E3%82%81%E3%82%93%E3%81%A8&time=1256660938&done=1&ng_rv=1&room_label=co17415&room_seetno=11&watch_count=31&comment_count=13&ichiba_notice_enable=0&comment_lock=0&base_time=1256660735&stream_ticket=697078%3Alv5875489%3A0%3A1256660938%3A6862f4d3c248c523
+video_id=lv5875489&thread_id=1007461258&l=999999999&url=rtmp://nleca04.live.nicovideo.jp:1935liveedge&stream_name=liverepeater:rtmp://origin101/liveorigin/lv5875489&ms=msg101.live.nicovideo.jp&ms_port=2814&user_id=697078&is_premium=1&nickname=繧ゅａ繧薙→&time=1256660938&done=1&ng_rv=1&room_label=co17415&room_seetno=11&watch_count=31&comment_count=13&ichiba_notice_enable=0&comment_lock=0&base_time=1256660735&stream_ticket=697078:lv5875489:0:1256660938:6862f4d3c248c523

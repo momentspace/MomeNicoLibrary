@@ -1,0 +1,7 @@
+V:\Data Files\Documents\Visual Studio 2008\Projects\MomeNicoLibrary\NicoLiveCommentViewerSample\bin\Debug\NicoLiveCommentViewerSample.exe
+V:\Data Files\Documents\Visual Studio 2008\Projects\MomeNicoLibrary\NicoLiveCommentViewerSample\bin\Debug\NicoLiveCommentViewerSample.pdb
+V:\Data Files\Documents\Visual Studio 2008\Projects\MomeNicoLibrary\NicoLiveCommentViewerSample\bin\Debug\MomeNicoLibrary.dll
+V:\Data Files\Documents\Visual Studio 2008\Projects\MomeNicoLibrary\NicoLiveCommentViewerSample\bin\Debug\MomeNicoLibrary.pdb
+V:\Data Files\Documents\Visual Studio 2008\Projects\MomeNicoLibrary\NicoLiveCommentViewerSample\obj\Debug\ResolveAssemblyReference.cache
+V:\Data Files\Documents\Visual Studio 2008\Projects\MomeNicoLibrary\NicoLiveCommentViewerSample\obj\Debug\NicoLiveCommentViewerSample.exe
+V:\Data Files\Documents\Visual Studio 2008\Projects\MomeNicoLibrary\NicoLiveCommentViewerSample\obj\Debug\NicoLiveCommentViewerSample.pdb

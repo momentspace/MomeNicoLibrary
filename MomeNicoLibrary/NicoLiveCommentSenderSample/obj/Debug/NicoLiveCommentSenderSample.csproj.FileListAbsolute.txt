@@ -1,0 +1,7 @@
+V:\Data Files\Documents\Visual Studio 2008\Projects\MomeNicoLibrary\NicoLiveCommentSenderSample\bin\Debug\NicoLiveCommentSenderSample.exe
+V:\Data Files\Documents\Visual Studio 2008\Projects\MomeNicoLibrary\NicoLiveCommentSenderSample\bin\Debug\NicoLiveCommentSenderSample.pdb
+V:\Data Files\Documents\Visual Studio 2008\Projects\MomeNicoLibrary\NicoLiveCommentSenderSample\bin\Debug\MomeNicoLibrary.dll
+V:\Data Files\Documents\Visual Studio 2008\Projects\MomeNicoLibrary\NicoLiveCommentSenderSample\bin\Debug\MomeNicoLibrary.pdb
+V:\Data Files\Documents\Visual Studio 2008\Projects\MomeNicoLibrary\NicoLiveCommentSenderSample\obj\Debug\ResolveAssemblyReference.cache
+V:\Data Files\Documents\Visual Studio 2008\Projects\MomeNicoLibrary\NicoLiveCommentSenderSample\obj\Debug\NicoLiveCommentSenderSample.exe
+V:\Data Files\Documents\Visual Studio 2008\Projects\MomeNicoLibrary\NicoLiveCommentSenderSample\obj\Debug\NicoLiveCommentSenderSample.pdb

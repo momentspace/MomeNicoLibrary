@@ -1,0 +1,7 @@
+V:\Data Files\Documents\Visual Studio 2008\Projects\MomeNicoLibrary\NicoLiveNgListViewer\obj\Debug\ResolveAssemblyReference.cache
+V:\Data Files\Documents\Visual Studio 2008\Projects\MomeNicoLibrary\NicoLiveNgListViewer\bin\Debug\NicoLiveNgListViewer.exe
+V:\Data Files\Documents\Visual Studio 2008\Projects\MomeNicoLibrary\NicoLiveNgListViewer\bin\Debug\NicoLiveNgListViewer.pdb
+V:\Data Files\Documents\Visual Studio 2008\Projects\MomeNicoLibrary\NicoLiveNgListViewer\bin\Debug\MomeNicoLibrary.dll
+V:\Data Files\Documents\Visual Studio 2008\Projects\MomeNicoLibrary\NicoLiveNgListViewer\bin\Debug\MomeNicoLibrary.pdb
+V:\Data Files\Documents\Visual Studio 2008\Projects\MomeNicoLibrary\NicoLiveNgListViewer\obj\Debug\NicoLiveNgListViewer.exe
+V:\Data Files\Documents\Visual Studio 2008\Projects\MomeNicoLibrary\NicoLiveNgListViewer\obj\Debug\NicoLiveNgListViewer.pdb
