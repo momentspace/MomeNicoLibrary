@@ -7,7 +7,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.IO;
 using System.Web;
-using MomeNicoLibrary.Common;
+using MomeNicoLibrary.Utility;
 using MomeNicoLibrary.NicoCommunity;
 
 namespace MomeNicoLibrary.NicoLive

@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MomeNicoLibrary", "MomeNico
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NicoLiveCommentViewerGUISample", "NicoLiveCommentViewerGUISample\NicoLiveCommentViewerGUISample.csproj", "{E08EDD31-0525-4001-8C32-BC5F6929DEE4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieRequester", "MovieRequester\MovieRequester.csproj", "{D087B3BD-3EFD-40C9-B8B3-CC80FBD1A1BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NicoLiveAPITest", "NicoLiveAPITest\NicoLiveAPITest.csproj", "{3C7DA8C2-8D62-470F-B400-4B9FE8CCDE6D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +47,14 @@ Global
 		{E08EDD31-0525-4001-8C32-BC5F6929DEE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E08EDD31-0525-4001-8C32-BC5F6929DEE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E08EDD31-0525-4001-8C32-BC5F6929DEE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D087B3BD-3EFD-40C9-B8B3-CC80FBD1A1BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D087B3BD-3EFD-40C9-B8B3-CC80FBD1A1BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D087B3BD-3EFD-40C9-B8B3-CC80FBD1A1BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D087B3BD-3EFD-40C9-B8B3-CC80FBD1A1BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C7DA8C2-8D62-470F-B400-4B9FE8CCDE6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C7DA8C2-8D62-470F-B400-4B9FE8CCDE6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C7DA8C2-8D62-470F-B400-4B9FE8CCDE6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C7DA8C2-8D62-470F-B400-4B9FE8CCDE6D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

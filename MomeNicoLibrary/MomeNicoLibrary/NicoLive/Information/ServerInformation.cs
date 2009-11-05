@@ -5,6 +5,9 @@ using System.Text;
 
 namespace MomeNicoLibrary.NicoLive.Information
 {
+	/// <summary>
+	/// サーバ情報
+	/// </summary>
 	public class ServerInformation
 	{
 		public ServerInformation(string address, int thread, int port)

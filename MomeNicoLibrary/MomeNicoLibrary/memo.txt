@@ -69,3 +69,6 @@ http://live.nicovideo.jp/api/getflv?v=lv5875489
 packet
 video_id=lv5875489&thread_id=1007461258&l=999999999&url=rtmp%3A%2F%2Fnleca04.live.nicovideo.jp%3A1935liveedge&stream_name=liverepeater%3Artmp%3A%2F%2Forigin101%2Fliveorigin%2Flv5875489&ms=msg101.live.nicovideo.jp&ms_port=2814&user_id=697078&is_premium=1&nickname=%E3%82%82%E3%82%81%E3%82%93%E3%81%A8&time=1256660938&done=1&ng_rv=1&room_label=co17415&room_seetno=11&watch_count=31&comment_count=13&ichiba_notice_enable=0&comment_lock=0&base_time=1256660735&stream_ticket=697078%3Alv5875489%3A0%3A1256660938%3A6862f4d3c248c523
 video_id=lv5875489&thread_id=1007461258&l=999999999&url=rtmp://nleca04.live.nicovideo.jp:1935liveedge&stream_name=liverepeater:rtmp://origin101/liveorigin/lv5875489&ms=msg101.live.nicovideo.jp&ms_port=2814&user_id=697078&is_premium=1&nickname=繧ゅａ繧薙→&time=1256660938&done=1&ng_rv=1&room_label=co17415&room_seetno=11&watch_count=31&comment_count=13&ichiba_notice_enable=0&comment_lock=0&base_time=1256660735&stream_ticket=697078:lv5875489:0:1256660938:6862f4d3c248c523
+
+System.Data.SQLiteはパブリックドメインらしい？
+http://sqlite.phxsoftware.com/

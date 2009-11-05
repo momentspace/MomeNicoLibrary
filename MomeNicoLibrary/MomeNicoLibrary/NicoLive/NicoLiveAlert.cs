@@ -88,7 +88,6 @@ namespace MomeNicoLibrary.NicoLive
 				ServerInformation si = ai.ServerInfo;
 				// XMLSocket部分
 				receiver = new AlertReveicer(si);
-				receiver.Open();
 				receiver.Initialize(-1);
 				receiver.ReceivedEvent += new AlertReveicer.ReceivedEventHandler(AlertCallback);
 				receiver.Receive();

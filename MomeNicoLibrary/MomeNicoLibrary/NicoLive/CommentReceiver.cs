@@ -6,6 +6,7 @@ using System.Xml;
 using System.Net;
 using System.Net.Sockets;
 using System.IO;
+using System.Threading;
 using MomeNicoLibrary.NicoLive.Information;
 
 namespace MomeNicoLibrary.NicoLive
@@ -15,52 +16,23 @@ namespace MomeNicoLibrary.NicoLive
 	/// </summary>
 	public class CommentReceiver
 	{
-		ServerInformation si;
+		/// <summary>
+		/// 受信したコメント
+		/// </summary>
+		private BroadcastCommentCollection recvComments = new BroadcastCommentCollection();
+
+		private ServerInformation si;
+		private Thread th;
+		private TcpClient tcp;
 
 		public CommentReceiver(ServerInformation si)
 		{
 			this.si = si;
-		}
-
-		public void Open()
-		{
+			th = new Thread(this.Receiving);
 			tcp = new System.Net.Sockets.TcpClient(si.Address, si.Port);
 		}
 
-		System.Net.Sockets.TcpClient tcp;
-		public void Initialize(int resFrom)
-		{
-			const string version = "20061206";
-			string t = string.Format("<thread thread=\"{0}\" version=\"{1}\" res_from=\"{2}\"/>\0", si.Thread, version, resFrom);
-			Stream ts = tcp.GetStream();
-			byte[] b = Encoding.ASCII.GetBytes(t);
-			ts.Write(b, 0, b.Length);
-
-			// レスポンスヘッダ受信
-			int buf;
-			List<byte> bufs = new List<byte>();
-
-			// <thread last_res="29" resultcode="0" revision="1"
-			//  server_time="1256562642" thread="1007391554" ticket="0x8a9ea98"/>\0
-			buf = ts.ReadByte();
-			while (buf != -1 && buf != '\0')
-			{
-				bufs.Add((byte)buf);
-				buf = ts.ReadByte();
-			}
-
-			try
-			{
-				string ln = Encoding.UTF8.GetString(bufs.ToArray());
-				Console.WriteLine(ln);
-			}
-			catch (Exception e)
-			{
-				Console.WriteLine(e.StackTrace);
-			}
-		}
-
-		public void Receive()
+		private void Receiving()
 		{
 			Stream ts = tcp.GetStream();
 			string ln = "";
@@ -118,6 +90,48 @@ namespace MomeNicoLibrary.NicoLive
 					ReceivedEvent(re);
 				}
 			}
+		}
+	
+		public BroadcastComment Recv()
+		{
+			return recvComments.DequeueComment();
+		}
+
+		public void Initialize(int resFrom)
+		{
+			const string version = "20061206";
+			string t = string.Format("<thread thread=\"{0}\" version=\"{1}\" res_from=\"{2}\"/>\0", si.Thread, version, resFrom);
+			Stream ts = tcp.GetStream();
+			byte[] b = Encoding.ASCII.GetBytes(t);
+			ts.Write(b, 0, b.Length);
+
+			// レスポンスヘッダ受信
+			int buf;
+			List<byte> bufs = new List<byte>();
+
+			// <thread last_res="29" resultcode="0" revision="1"
+			//  server_time="1256562642" thread="1007391554" ticket="0x8a9ea98"/>\0
+			buf = ts.ReadByte();
+			while (buf != -1 && buf != '\0')
+			{
+				bufs.Add((byte)buf);
+				buf = ts.ReadByte();
+			}
+
+			try
+			{
+				string ln = Encoding.UTF8.GetString(bufs.ToArray());
+				Console.WriteLine(ln);
+			}
+			catch (Exception e)
+			{
+				Console.WriteLine(e.StackTrace);
+			}
+		}
+
+		public void Receive()
+		{
+			th.Start();
 		}
 
 		public delegate void ReceivedEventHandler(string message);

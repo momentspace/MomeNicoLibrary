@@ -83,5 +83,15 @@ namespace MomeNicoLibrary.NicoLive.Information
 			}
 			return dict;
 		}
+
+		public override string ToString()
+		{
+			string s = "";
+			foreach (KeyValuePair<string, string> pair in dict)
+			{
+				s += pair.Key + " = " + pair.Value + "\n";
+			}
+			return s;
+		}
 	}
 }

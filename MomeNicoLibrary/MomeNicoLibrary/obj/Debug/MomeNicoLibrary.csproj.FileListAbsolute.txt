@@ -1,5 +1,0 @@
-V:\Data Files\Documents\Visual Studio 2008\Projects\MomeNicoLibrary\MomeNicoLibrary\bin\Debug\MomeNicoLibrary.dll
-V:\Data Files\Documents\Visual Studio 2008\Projects\MomeNicoLibrary\MomeNicoLibrary\bin\Debug\MomeNicoLibrary.pdb
-V:\Data Files\Documents\Visual Studio 2008\Projects\MomeNicoLibrary\MomeNicoLibrary\obj\Debug\ResolveAssemblyReference.cache
-V:\Data Files\Documents\Visual Studio 2008\Projects\MomeNicoLibrary\MomeNicoLibrary\obj\Debug\MomeNicoLibrary.dll
-V:\Data Files\Documents\Visual Studio 2008\Projects\MomeNicoLibrary\MomeNicoLibrary\obj\Debug\MomeNicoLibrary.pdb

@@ -35,6 +35,7 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Data.SQLite, Version=1.0.43.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -46,7 +47,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NicoLive\Information\HeartBeatInformation.cs" />
+    <Compile Include="Utility\FirefoxCookie.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="NicoLive\Information\BroadcastInformation.cs" />
     <Compile Include="NicoLive\Information\NgWordList.cs" />
     <Compile Include="Utility\RSAKey.cs" />
     <Compile Include="Utility\RSALib.cs" />
@@ -54,7 +58,7 @@
     <Compile Include="NicoCommunity\NicoCommunity.cs" />
     <Compile Include="NicoLive\AlertData.cs" />
     <Compile Include="NicoLive\AlertReveicer.cs" />
-    <Compile Include="NicoLive\Command\CommentCommand.cs" />
+    <Compile Include="NicoLive\Information\CommentCommand.cs" />
     <Compile Include="NicoLive\CommentReceiver.cs" />
     <Compile Include="NicoLive\CommentSender.cs" />
     <Compile Include="NicoLive\Information\AlertInformation.cs" />
@@ -78,6 +82,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="memo.txt" />
+    <Content Include="System.Data.SQLite.DLL" />
+    <Content Include="System.Data.SQLite.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Browser\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

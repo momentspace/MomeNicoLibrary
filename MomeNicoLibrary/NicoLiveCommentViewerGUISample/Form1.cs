@@ -75,7 +75,7 @@ namespace NicoLiveCommentViewerGUISample
 				comment.Number.ToString(),
 				comment.ElapsedTime.ToString(),
 				comment.UserId,
-				comment.Comment,
+				comment.CommentValue,
 			}));
 			Application.DoEvents();
 		}

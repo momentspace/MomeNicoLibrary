@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace MomeNicoLibrary.Utility
+namespace MomeNicoLibrary.NicoLive.Information
 {
 	public class XmlRequest
 	{

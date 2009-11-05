@@ -7,7 +7,6 @@ using System.Net;
 using System.Net.Sockets;
 using System.IO;
 using System.Web;
-using MomeNicoLibrary.Common;
 using MomeNicoLibrary.Utility;
 
 namespace MomeNicoLibrary.NicoLive.Information
@@ -63,7 +62,7 @@ namespace MomeNicoLibrary.NicoLive.Information
 			return comment;
 		}
 
-		public string Comment
+		public string CommentValue
 		{
 			get
 			{

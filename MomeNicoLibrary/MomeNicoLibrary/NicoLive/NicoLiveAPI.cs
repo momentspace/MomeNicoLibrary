@@ -160,7 +160,7 @@ namespace MomeNicoLibrary.NicoLive
 		/// </summary>
 		/// <param name="mail"></param>
 		/// <param name="password"></param>
-		/// <returns>			</returns>
+		/// <returns></returns>
 		public static CookieCollection Login(string mail, string password)
 		{
 			//// デバッグ用
@@ -273,8 +273,31 @@ namespace MomeNicoLibrary.NicoLive
 			return list;
 		}
 
+		public static HeartBeatInformation HeartBeat(string broadcastId, CookieCollection cookies)
+		{
+			string url = "http://live.nicovideo.jp/api/heartbeat?v=" + broadcastId;
 
+			// Request開始
+			HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(url);
+			request.Method = "GET";
+			request.CookieContainer = new CookieContainer();
+			foreach (Cookie c in cookies)
+			{
+				request.CookieContainer.Add(c);
+			}
 
-		
+			HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+			Stream resStream = response.GetResponseStream();
+
+			StreamReader sr = new StreamReader(resStream, Encoding.UTF8);
+			string html = sr.ReadToEnd();
+
+			HeartBeatInformation info = HeartBeatInformation.Parse(html);
+	
+			sr.Close();
+			resStream.Close();
+
+			return info;
+		}
 	}
 }

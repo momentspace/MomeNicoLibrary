@@ -27,9 +27,8 @@ namespace NicoLiveCommentViewer
 				"HyrTDu0pP8yj5evqZpWPhFJcZnXELsE/qE2xwNNqcC+BtPnBOHxRjFb9bru/BQrvyEiWQ6ADJOdw58BI" +
 				"yt4hdGZp4oY=";
 
-			NicoLiveBroadcast broadcast = new NicoLiveBroadcast("lv5947260", mail, password, RSAKey.SecretKey);
+			NicoLiveBroadcast broadcast = new NicoLiveBroadcast("lv6392901", mail, password, RSAKey.SecretKey);
 			broadcast.CommentReceivedEvent += new NicoLiveBroadcast.CommentReceivedEventHandler(callback);
-//			broadcast.AddObserver(Program.callback);
 			broadcast.Start();
 		}
 
@@ -40,7 +39,7 @@ namespace NicoLiveCommentViewer
 				.Append(comment.ElapsedTime.ToString()).Append(" ")
 				.Append(comment.Premium ? "P" : "N" ).Append(" ")
 				.Append(comment.UserId).Append(" ")
-				.Append(comment.Comment).Append(" ")
+				.Append(comment.CommentValue).Append(" ")
 			);
 			return;
 
@@ -63,7 +62,7 @@ namespace NicoLiveCommentViewer
 			sb = new StringBuilder();
 			sb.Append("SEND SSTP/1.1\r\n");
 			sb.Append("Sender: MomeNicoLibrary\r\n");
-			sb.Append("Script: \\0\\s0" + comment.Comment + "\\e\r\n");
+			sb.Append("Script: \\0\\s0" + comment.CommentValue + "\\e\r\n");
 			sb.Append("Option: nodescript,notranslate\r\n");
 			sb.Append("Charset: UTF-8\r\n\r\n");
 			sw.Write(sb);

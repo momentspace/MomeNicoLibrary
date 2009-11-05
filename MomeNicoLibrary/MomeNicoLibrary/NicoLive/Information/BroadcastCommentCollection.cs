@@ -17,22 +17,45 @@ namespace MomeNicoLibrary.NicoLive
 		private Queue<BroadcastComment> comments = new Queue<BroadcastComment>();
 
 		/// <summary>
-		/// コメント設定
+		/// コメントをキューの最後に追加する
 		/// </summary>
 		/// <param name="comment"></param>
-		public void SetComment(BroadcastComment comment)
+		public void EnqueueComment(BroadcastComment comment)
 		{
-			comments.Enqueue(comment);
+			lock (lockObject)
+			{
+				comments.Enqueue(comment);
+			}
+		}
+
+		public int Count
+		{
+			get
+			{
+				int count;
+				lock (lockObject)
+				{
+					count = comments.Count;
+				}
+				return count;
+			}
 		}
 
 		/// <summary>
-		/// コメント取得
+		/// コメントをキューの最後から取り出す
 		/// </summary>
 		/// <returns></returns>
-		public BroadcastComment GetComment()
+		public BroadcastComment DequeueComment()
 		{
-			return comments.Dequeue();
+			BroadcastComment comment;
+			lock (lockObject)
+			{
+				comment = comments.Dequeue();
+			}
+			return comment;
 		}
+
+		private object lockObject = new object();
 
 		/// <summary>
 		/// イテレータ実装
